@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @vishvastrikutkar
+- 👋 Hi, I’m Vishvas Ratnakarrao Trikutkar
 - 👀 I’m interested in Automation, DevOps, Selenium, Java, Cucumber
 - 🌱 I’m currently learning Ansible
 - 💞️ I’m looking to collaborate on anything which is exciting to learn
