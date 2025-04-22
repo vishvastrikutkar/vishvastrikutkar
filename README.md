@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Vishvas Ratnakarrao Trikutkar
-- 👀 I’m interested in Automation, DevOps, Selenium, Java, Cucumber
-- 🌱 I’m currently learning Ansible
+- 👀 I’m interested in Automation, AI Agent Development, Selenium, Java, Cucumber, Playwright
+- 🌱 I’m currently exploring AI enabled test automation.
 - 💞️ I’m looking to collaborate on anything which is exciting to learn
 - 📫 How to reach me : vishvas.trikutkar@gmail.com
 
