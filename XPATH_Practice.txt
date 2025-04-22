@@ -1,0 +1,49 @@
+text() and normalize-space()
+==================================================================
+//p[text()='Forgot your password? ']
+//h5[text()='Login']
+//*[text()='Login']
+//h5[.='Login']
+//h5[normalize-space()='Login']
+//*[normalize-space()='Login']
+
+Contains() and starts-with() methods
+==================================================================
+//label[contains(text(),'Username')]
+//button[contains(@role,'none')]
+//p[contains(normalize-space(.),'Punched Out:')]
+//button[starts-with(@class,'oxd-icon-button')]
+
+Conditional and/or
+==================================================================
+//button[contains(@class,'oxd-main-menu-button') and @type='button' and @role='none']
+//*[(@type='button' or @role='none') and @title='Help']
+
+
+Parent - Direct child
+==================================================================
+//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-quick-launch-card']/button[@title='Assign Leave']
+
+Parent - Nested child
+==================================================================
+//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-quick-launch-card']//p[text()='Assign Leave']
+
+
+Complex XPATHS (https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers)
+==================================================================
+//div[@class='oxd-table']//div[@role='row'][.//div[contains(text(),'Ali Khaled')]] -- This will select the entire row containing Ali Khaled
+//div[@class='oxd-table']//div[@role='row'][.//div[contains(text(),'Ali Khaled')]]//input[@type='checkbox'] -- This will select the checkbox for the row containing Ali Khaled
+//div[@class='oxd-table']//div[@role='row'][.//div[contains(text(),'Ali Khaled')]]//button/i[@class='oxd-icon bi-trash'] -- This will select the trash button for the row containing Ali Khaled
+//div[@class='oxd-table']//div[@role='row'][.//div[contains(text(),'Ali Khaled')]]//button/i[@class='oxd-icon bi-pencil-fill'] -- This will select the edit button for the row containing Ali Khaled
+//div[@class='oxd-table']//div[@class='oxd-table-row oxd-table-row--with-border'][.//div[@role='columnheader']]//input[@type='checkbox']
+
+XPATH Axes:(https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers)
+==================================================================
+//div[@class='oxd-table']/child::div[@class='oxd-table-header']
+//li[@class='oxd-main-menu-item-wrapper']/child::a[contains(@href,'Admin')]
+//li[@class='oxd-main-menu-item-wrapper']/following::a[contains(@href,'Pim')]
+//ul[@class='oxd-main-menu']/descendant::a[contains(@href,'Admin')]
+//li[normalize-space()='User Management']/ancestor::nav[@aria-label='Topbar Menu']
+
+
+
